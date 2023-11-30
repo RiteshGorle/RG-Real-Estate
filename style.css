@@ -1,0 +1,301 @@
+
+/* WebSite Name: Fictional Real Estate
+   Made by: Ritesh Gorle
+   Created: Nov 2022 
+   Content: Fictional Real Estate
+*/
+
+/*****************************************
+Table Of Contents:
+
+01. SECTION 02: HERO SECTION
+02. SECTION 03: MAIN SECTION
+03. SECTION 04: CUSTOMER REVIEWS
+04. SECTION 05: CONTACT FORM
+05. SECTION 06: FOOTER 
+
+******************************************/
+
+
+/**************************************/
+/*     01. SECTION 02: HERO SECTION   */
+/**************************************/   
+
+#CTA{
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.sub-mit {
+  border-radius: 4px;
+  background-color: red;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.sub-mit span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.sub-mit span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.sub-mit:hover span {
+  padding-right: 25px;
+}
+
+.sub-mit:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+/**************************************/
+/*     02. SECTION 03: MAIN SECTION   */
+/**************************************/   
+
+h2{
+  color: red;
+}
+
+.list1 ul {
+  list-style: none;
+}
+
+.list1 li {
+  display: inline-block;
+  margin-right: 15px; /* add spacing between items */
+} 
+
+
+#main, #reviews {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+
+
+
+/*****************************************/
+/*     03. SECTION 04: CUSTOMER REVIEWS   */
+/*****************************************/   
+
+.card {
+  margin: 0 auto;
+  border: none;
+}
+.card .carousel-item {
+  min-height: 190px;
+}
+.card .carousel-caption {
+  padding: 0;
+  right: 15px;
+  left: 15px;
+  top: 15px;
+  color: #3d3d3d;
+  border: 1px solid #ccc;
+  min-height:175px;
+  padding: 15px;
+}
+.card .carousel-caption .col-sm-3 {
+  display: flex;
+  align-items: center;
+}
+.card .carousel-caption .col-sm-9 {
+  text-align: left;
+}
+.card .carousel-control-prev, .card .carousel-control-next {
+  color: #3d3d3d !important;
+  opacity: 1 !important;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-image: none;
+  color: #fff;
+  font-size: 14px;
+  background-color: #cd3a54;
+  height: 32px;
+  line-height: 32px;
+  width: 32px;
+}
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+  opacity: 0.85;
+}
+.carousel-control-prev {
+  left: 40%;
+  top: 110%;
+}
+.carousel-control-next {
+  right: 40%;
+  top: 110%;
+}
+.midline {
+  width: 60px;
+  border-top: 1px solid #d43025;
+}
+.carousel-caption h2 {
+  font-size: 14px;
+}
+.carousel-caption h2 span {
+  color: #cd3a54;
+}
+ @media (min-width: 320px) and (max-width: 575px) {
+.carousel-caption {
+  position: relative;
+}
+.card .carousel-caption {
+  left: 0;
+  top: 0;
+  margin-bottom: 15px;
+}
+.card .carousel-caption img {
+  margin: 0 auto;
+}
+.carousel-control-prev {
+  left: 35%;
+  top: 105%;
+}
+.carousel-control-next {
+  right: 35%;
+  top: 105%;
+}
+.card .carousel-caption h3 {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+}
+@media (min-width: 576px) and (max-width: 767px) {
+.carousel-caption {
+  position: relative;
+}
+.card .carousel-caption {
+  left: 0;
+  top: 0;
+  margin-bottom: 15px;
+}
+.card .carousel-caption img {
+  margin: 0 auto;
+}
+.card .carousel-caption h3, .card .carousel-caption small {
+  text-align: center;
+}
+.carousel-control-prev {
+  left: 35%;
+  top: 105%;
+}
+.carousel-control-next {
+  right: 35%;
+  top: 105%;
+}
+}
+@media (min-width: 767px) and (max-width: 991px) {
+.card .carousel-caption h3 {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+}
+
+
+
+
+/*****************************************/
+/*       04. SECTION 05: CONTACT FORM    */
+/*****************************************/   
+.contact-container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      box-sizing: border-box;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+    }
+
+
+
+
+/*****************************************/
+/*       05. SECTION 06: FOOTER         */
+/*****************************************/   
+    .footer {
+      background-color: white;
+      color: black;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .social-links {
+      margin-top: 10px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 0 10px;
+      color: black;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .social-links a:hover {
+      color: #55acee; 
+    }
